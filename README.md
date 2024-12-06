@@ -36,10 +36,10 @@ This is a professional Web Portfolio Template! I designed it to help individuals
 
 - **Header/Navigation**: Easy navigation to different sections of the portfolio.
 - **Hero**: Introduction with a call-to-action.
-- **About**: Information about Guy Mann and his approach to web development and design.
-- **Skills**: Highlighting expertise in various technologies and tools.
-- **Projects**: Showcasing featured projects with descriptions and links.
-- **Blog**: Latest blog posts on technology, design, and development.
+- **About**: Information and approach to web development and design.
+- **Skills**: Highlighting expertise in some technologies and tools.
+- **Projects**: Featured projects with descriptions and links.
+- **Blog**: Latest blog posts.
 - **Testimonials**: Client feedback and ratings.
 - **Contact**: Form for inquiries and project discussions.
 - **Footer**: Quick links, services offered, and contact information.
