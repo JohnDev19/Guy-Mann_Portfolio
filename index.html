@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--================================================
+    Project: Guy Mann - Developer & UI/UX Designer
+    Description: A modern, responsive portfolio website showcasing web development, design skills, projects, and professional expertise.
+    Developer: JohnDev19 (https://github.com/JohnDev19)
+    Version: 1.0.0
+    Last Update: December 2024
+=====================================================    
+    Technologies Used:
+    - HTML5
+    - CSS3 (Custom Design)
+    - JavaScript (Vanilla JS)
+    - Font Awesome Icons
+    - AOS (Animate on Scroll) Library
+    - Google Fonts
+=====================================================    
+    Table of Contents:
+    1. Meta Tags
+    2. External Stylesheets
+    3. Custom CSS Variables
+    4. Responsive Design
+    5. Sections:
+       - Header/Navigation
+       - Hero
+       - About
+       - Skills
+       - Projects
+       - Blog
+       - Testimonials
+       - Contact
+       - Footer
+=====================================================    
+    Color Scheme:
+    - Primary Color: #2563eb (Blue)
+    - Secondary Color: #1e40af
+    - Accent Color: #fbbf24
+=====================================================    
+    Licensing: 
+    © 2024 JohnDev19. All Rights Reserved.
+===================================================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guy Mann - Developer & UI/UX Designer</title>
+    <meta name="description" content="Professional portfolio of Guy Mann, specializing in web development, UI/UX design, and creating innovative digital solutions.">
+    <meta name="keywords" content="web developer, UI/UX designer, frontend developer, portfolio, web design, digital solutions">
+    <meta name="author" content="JohnDev19">
+
+    <!-- Open graph / facebook meta tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.guymann.com/">
+    <meta property="og:title" content="Guy Mann - Developer & UI/UX Designer">
+    <meta property="og:description" content="Professional portfolio showcasing innovative web development and design expertise.">
+    <meta property="og:image" content="https://www.guymann.com/images/og-image.jpg">
+
+    <!-- Twitter (X) meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.guymann.com/">
+    <meta name="twitter:title" content="Guy Mann - Developer & UI/UX Designer">
+    <meta name="twitter:description" content="Professional portfolio showcasing innovative web development and design expertise.">
+    <meta name="twitter:image" content="https://www.guymann.com/images/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://www.guymann.com/">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Portfolio</span>
+            </a>
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="newsletter-signup">
+                <div class="newsletter-input-group">
+                    <input 
+                        type="email" 
+                        class="newsletter-input" 
+                        placeholder="Newsletter" 
+                        required
+                    >
+                    <button class="newsletter-submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Creating <span class="text-gradient">Digital Experiences</span> That Matter</h1>
+                <p>Hi, I'm Guy Mann. A passionate web developer and UI/UX designer crafting beautiful and functional digital experiences.</p>
+                <a href="#contact" class="cta-button">Let's Work Together</a>
+            </div>
+            <div class="hero-image" data-aos="fade-in" data-aos-duration="4000">
+              <picture>
+        <source media="(min-width: 1024px)" srcset="img/hero-character1.png">
+        <source media="(max-width: 1023px)" srcset="img/hero-character2.png">
+        <img src="img/hero-character2.png" alt="Professional headshot" class="hero-image-src">
+    </picture>
+    <div class="hero-background-image"></div>
+  </div>
+  </div>
+</section>
+    
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-in" data-aos-duration="4000">
+            <h2>About <span class="text-gradient">Me</span></h2>
+            <p>Bridging creativity and technology to craft exceptional digital experiences</p>
+        </div>
+        
+        <div class="about-content" data-aos="fade-up" data-aos-duration="4000">
+            <div class="about-image-wrapper">
+                <div class="about-image-container">
+                    <img src="img/img-about.png" alt="Guy Mann Professional Portrait" class="about-image">
+                    <div class="image-overlay"></div>
+                    <div class="status-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Available for Freelance</span>
+                    </div>
+                </div>
+                <div class="skill-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <h4>5+ Years</h4>
+                            <p>Full Stack Development</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <h4>15+ Projects</h4>
+                            <p>Successfully Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-text-content">
+                <div class="about-description">
+                    <p>
+                        I'm a passionate web developer and UI/UX designer with a mission to transform complex 
+                        digital challenges into elegant, user-centric solutions. My approach blends technical 
+                        expertise with creative problem-solving.
+                    </p>
+                    <p>
+                        With a strong background in modern web technologies, I specialize in creating responsive, 
+                        performant, and accessible web applications that not only look great but also deliver 
+                        exceptional user experiences.
+                    </p>
+                    <p>
+                      Driven by curiosity and a desire to continuously grow, I thrive on tackling new challenges, learning emerging technologies, and collaborating with teams to build digital products that make a difference.
+                      </p>
+                </div>
+                <div class="personal-stats">
+                  <div class="stat-item" data-target="95">
+                      <h3 class="stat-number">0</h3>
+                      <p class="stat-label">Web Development</p>
+                   </div>
+                 <div class="stat-item" data-target="85">
+                      <h3 class="stat-number">0</h3>
+                      <p class="stat-label">UI/UX Design</p>
+                      </div>
+                  <div class="stat-item" data-target="90">
+                   <h3 class="stat-number">0</h3>
+                   <p class="stat-label">Problem Solving</p>
+                   </div>
+                   </div>
+                <div class="about-cta">
+                    <a href="#contact" class="cta-button">Hire Me</a>
+                    <a href="#" class="secondary-button">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="skills-background-image" data-aos="fade-down" data-aos-duration="4000">
+        <img src="img/3d-character.png" alt="3D Character" class="skills-bg-character">
+    </div>
+        <div class="section-header" data-aos="fade-in" data-aos-duration="4000">
+            <h2>My <span class="text-gradient">Expertise</span></h2>
+            <p>Leveraging cutting-edge technologies to build modern web applications</p>
+        </div>
+        <div class="skills-grid" data-aos="fade-in" data-aos-duration="4000">
+            <div class="skill-card">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-paint-brush skill-icon"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive and beautiful user interfaces that delight users and drive engagement.</p>
+                <div class="skill-details">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe XD</span>
+                    <span class="skill-tag">Sketch</span>
+                    <span class="skill-tag">Prototyping</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-code skill-icon"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Building responsive and performant web applications with modern technologies.</p>
+                <div class="skill-details">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Tailwind</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-server skill-icon"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Creating scalable server-side solutions and robust APIs.</p>
+                <div class="skill-details">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">GraphQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+        <div class="section-header" data-aos="fade-in" data-aos-duration="4000">
+            <h2>Featured <span class="text-gradient">Projects</span></h2>
+            <p>A showcase of my best work</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-in" data-aos-duration="4000">
+                <div class="project-image-wrapper">
+                    <img src="img/project1.jpg" alt="E-commerce Project" class="project-image">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">A full-featured e-commerce platform with real-time inventory, secure payments, and admin dashboard.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">View Live</a>
+                        <a href="#" class="project-link secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-in" data-aos-duration="4000">
+                <div class="project-image-wrapper">
+                    <img src="img/project2.jpg" alt="Analytics Dashboard" class="project-image">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">D3.js</span>
+                        <span class="project-tag">GraphQL</span>
+                    </div>
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-description">Real-time data visualization platform with customizable widgets and automated reporting features.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">View Demo</a>
+                        <a href="#" class="project-link secondary">Case Study</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-in" data-aos-duration="4000">
+                <div class="project-image-wrapper">
+                    <img src="img/project3.jpg" alt="Fitness App" class="project-image">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">ReactNative</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Redux</span>
+                    </div>
+                    <h3 class="project-title">FitTrack Pro</h3>
+                    <p class="project-description">Cross-platform fitness tracking app with personalized workout plans and progress analytics.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">App Store</a>
+                        <a href="#" class="project-link secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Blog Section -->
+<section class="blog-section" id="blog">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Latest <span class="text-gradient">Blog Posts</span></h2>
+            <p class="section-subtitle">Discover Insights and Inspiration</p>
+        </div>
+
+        <div class="blog-content-wrapper">
+            <!-- Desktop blog grid -->
+            <div class="blog-grid desktop-blogs">
+                <!-- Blog card 1 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/blog1.jpg" alt="Blog Post Title">
+                        <span class="blog-category">Technology</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">June 15, 2024</span>
+                            <span class="blog-author">Guy Mann</span>
+                        </div>
+                        <h3 class="blog-title">Exploring AI Innovations</h3>
+                        <p class="blog-excerpt">
+                            Dive into the latest advancements in artificial intelligence 
+                            and how they're reshaping our world.
+                        </p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">Read More</a>
+                            <div class="blog-tags">
+                                <span>AI</span>
+                                <span>Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog card 2 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/blog2.jpg" alt="Blog Post Title">
+                        <span class="blog-category">Design</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">June 10, 2024</span>
+                            <span class="blog-author">Guy Mann</span>
+                        </div>
+                        <h3 class="blog-title">UX Design Trends</h3>
+                        <p class="blog-excerpt">
+                            Discover the latest user experience design trends 
+                            that are transforming digital interactions.
+                        </p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">Read More</a>
+                            <div class="blog-tags">
+                                <span>UX</span>
+                                <span>Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog card 3 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/blog3.jpg" alt="Blog Post Title">
+                        <span class="blog-category">Development</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">June 5, 2024</span>
+                            <span class="blog-author">Guy Mann</span>
+                        </div>
+                        <h3 class="blog-title">Modern Web Development</h3>
+                        <p class="blog-excerpt">
+                            Exploring cutting-edge web development techniques 
+                            and frameworks for building robust applications.
+                        </p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">Read More</a>
+                            <div class="blog-tags">
+                                <span>Web Dev</span>
+                                <span>Frameworks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile blog carousel -->
+            <div class="blog-carousel">
+                <div class="carousel-wrapper">
+                    <!-- Blog 1 -->
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/blog1.jpg" alt="Blog Post Title">
+                            <span class="blog-category">Technology</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">June 15, 2024</span>
+                                <span class="blog-author">Guy Mann</span>
+                            </div>
+                            <h3 class="blog-title">Exploring AI Innovations</h3>
+                            <p class="blog-excerpt">
+                                Dive into the latest advancements in artificial intelligence 
+                                and how they're reshaping our world.
+                            </p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more-btn">Read More</a>
+                                <div class="blog-tags">
+                                    <span>AI</span>
+                                    <span>Technology</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog 2 -->
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/blog2.jpg" alt="Blog Post Title">
+                            <span class="blog-category">Design</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">June 10, 2024</span>
+                                <span class="blog-author">Guy Mann</span>
+                            </div>
+                            <h3 class="blog-title">UX Design Trends</h3>
+                            <p class="blog-excerpt">
+                                Discover the latest user experience design trends 
+                            that are transforming digital interactions.
+                            </p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more-btn">Read More</a>
+                                <div class="blog-tags">
+                                    <span>UX</span>
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog 3 -->
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/blog3.jpg" alt="Blog Post Title">
+                            <span class="blog-category">Development</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">June 5, 2024</span>
+                                <span class="blog-author">Guy Mann</span>
+                            </div>
+                            <h3 class="blog-title">Modern Web Development</h3>
+                            <p class="blog-excerpt">
+                                Exploring cutting-edge web development techniques 
+                            and frameworks for building robust applications.
+                            </p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more-btn">Read More</a>
+                                <div class="blog-tags">
+                                <span>Web Dev</span>
+                                <span>Frameworks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <div class="carousel-dot active" data-slide="0"></div>
+                    <div class="carousel-dot" data-slide="1"></div>
+                    <div class="carousel-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-actions">
+            <a href="#" class="view-all-blogs">
+                View All Blog Posts
+                <i class="icon-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-in" data-aos-duration="4000">
+            <h2>What <span class="text-gradient">Client Say</span></h2>
+            <p>Hear from those who've experienced our work firsthand</p>
+        </div>
+
+        <div class="testimonials-wrapper" data-aos="fade-in" data-aos-duration="4000">
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="img/client1.png" alt="Client Name">
+                            </div>
+                            <div class="author-info">
+                                <h4>Juan Dela Cruz</h4>
+                                <span>CEO, Tech Innovations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-text">4.5/5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-navigation" data-aos="fade-in" data-aos-duration="4000">
+                <button class="nav-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots"></div>
+                <button class="nav-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section id="contact" class="contact">
+    <div class="section-header" data-aos="fade-in" data-aos-duration="4000">
+        <h2>Get <span class="text-gradient">In Touch</span></h2>
+        <p>Let's discuss your next project</p>
+    </div>
+    <div class="contact-wrapper" data-aos="fade-in" data-aos-duration="4000">
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group custom-dropdown">
+                  <label class="form-label">Project Type</label>
+                  <div class="dropdown-wrapper">
+                    <div class="dropdown-select">
+                      <span class="selected-option">Select project type</span>
+                      <i class="fas fa-chevron-down dropdown-arrow"></i>
+                      </div>
+                      <ul class="dropdown-list">
+                        <li data-value="web">Web Development</li>
+                        <li data-value="mobile">Mobile App</li>
+                        <li data-value="ui">UI/UX Design</li>
+                        <li data-value="other">Other</li>
+                        </ul>
+                        </div>
+                        <input type="hidden" name="project-type" class="dropdown-input" required>
+                        </div>
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-input" rows="5" placeholder="Tell me about your project" required></textarea>
+                </div>
+                <button type="submit" class="form-submit">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+        <div class="contact-image-container">
+            <div class="contact-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Contact Image" class="contact-image">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <footer class="site-footer">
+    <div class="footer-content container" data-aos="fade-in" data-aos-duration="4000">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h4 class="footer-logo">
+                    <i class="fas fa-code"></i> Portfolio
+                </h4>
+                <p>Crafting digital experiences that inspire and transform. Dedicated to creating innovative web solutions.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Design</li>
+                    <li>UI/UX Design</li>
+                    <li>Frontend Development</li>
+                    <li>Mobile App Development</li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p>Email: hello@brian.dev</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Guy Mann Portfolio. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
