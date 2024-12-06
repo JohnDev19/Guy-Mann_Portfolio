@@ -1,11 +1,11 @@
-# Guy Mann - Developer & UI/UX Designer Portfolio
-
-![Portfolio Banner](poster1.jpg)
-![Portfolio Banner](poster2.jpg)
+# Guy Mann - Portfolio Web Template
 
 ## Overview
 
-This is the portfolio website of **Guy Mann**, a passionate web developer and UI/UX designer. The site showcases my skills, projects, and professional expertise in creating modern, responsive digital experiences.
+This is a professional Web Portfolio Template! I designed it to help individuals showcase their skills, projects, and experiences. This template is perfect for developers, designers, and creatives.
+
+![Portfolio Banner](poster1.jpg)
+![Portfolio Banner](poster2.jpg)
 
 ## Table of Contents
 
