@@ -12,8 +12,7 @@ This is a professional Web Portfolio Template! I designed it to help individuals
 1. [Technologies Used](#technologies-used)
 2. [Features](#features)
 3. [Sections](#sections)
-4. [Color Scheme](#color-scheme)
-5. [Licensing](#licensing)
+4. [Licensing](#licensing)
 
 ## Technologies Used
 
@@ -43,12 +42,6 @@ This is a professional Web Portfolio Template! I designed it to help individuals
 - **Testimonials**: Client feedback and ratings.
 - **Contact**: Form for inquiries and project discussions.
 - **Footer**: Quick links, services offered, and contact information.
-
-## Color Scheme
-
-- **Primary Color**: ![#2563eb](https://via.placeholder.com/15/2563eb/000000?text=+) `#2563eb` (Blue)
-- **Secondary Color**: ![#1e40af](https://via.placeholder.com/15/1e40af/000000?text=+) `#1e40af`
-- **Accent Color**: ![#fbbf24](https://via.placeholder.com/15/fbbf24/000000?text=+) `#fbbf24`
 
 ## Licensing
 
